@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+.tect_serch{
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loader{
+  height: 100px;
+  width: 100px;
+  border-bottom: 2px solid #000;
+  border-radius: 50%;
+  animation: rotation 0.3s infinite ease-in;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes rotation {
+  to{
+    transform: rotateZ(360deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loder_center{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.circle_loder{
+  position: absolute;
+  margin-top: 120px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_tech{
+  border-radius: 0px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.remove_btn{
+  color: red;
+}
+
+.remove_btn:hover{
+  color: red;
+}
+
+body{
+  
+  font-family: 'Gotu', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #dbe6fa;
+}
+
+.btn_primary{
+  border-radius: 0;
+  border: 1px solid #000;
+  box-shadow: none !important;
+  outline: none !important;
 }
